@@ -9,10 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/4u7d966odlevqn0/export-malaria.pkl?dl=1' # edit this
-export_file_name = 'export-malaria.pkl' # edit this
+export_file_url = 'https://www.dropbox.com/s/3x8qgdejvabteap/export-endoscope.pkl?dl=1' # edit this
+export_file_name = 'export-endoscope.pkl' # edit this
 
-classes = ['Parasitized', 'Uninfected'] # edit this
+classes = ['dyed-lifted-polyps', 'dyed-resection-margins', 'esophagitis', 'normal-cecum', 'normal-pylorus', 'normal-z-line', 'polyps', 'ulcerative-colitis'] # edit this
 path = Path(__file__).parent
 
 app = Starlette()
